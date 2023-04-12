@@ -1,2 +1,2 @@
-# LabO---C-digos
+# LabO--Codes
 Repositório para LabO
