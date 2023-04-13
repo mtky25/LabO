@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Exercicio1{
-
+    /*amo o momo */
     /* funçao responsável por ler a matriz de entrada. Parâmetro Scanner IMPORTANTE para isso.*/
      static double[][] lematriz(Scanner scanner,int lin ,int col){
         System.out.println("lendo matriz " + lin + "por" + col);
