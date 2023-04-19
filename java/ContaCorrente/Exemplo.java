@@ -25,8 +25,32 @@ public class Exemplo {
                                         Marcelo.endereço,
                                         0);
 
-    Cliente[] clientes  = {Marcelo, Thainara, Michelangelo};
+    Cliente Jimpas = new Cliente("Joao Paulo",
+                                4,
+                                "26/4/2000",
+                                Marcelo.endereço,
+                                0);
+
+    Cliente[] clientes  = {Marcelo, Thainara, Michelangelo,Jimpas};
         for(Cliente cliente: clientes)
         System.out.println(cliente);
+
+    Conta ContaMichelangelo = new ContaComum(Michelangelo,12, 13);
+        ContaMichelangelo.depositar(100);
+
+    Cliente[] ContaConj = {Marcelo,Thainara};
+    Conta ContaConjunta = new ContaConjunta(ContaConj, 10, 15);
+        ContaConjunta.depositar(100);
+
+    Conta ContaJimpas = new ContaPoupanca(Jimpas, 3, 5);
+        ContaJimpas.depositar(100);
+
+
+    Conta[] contas = {ContaMichelangelo,ContaConjunta,ContaJimpas};
+    for (Conta conta:contas ){
+        conta.tirarExtrato(); 
     }
 }
+}
+
+    

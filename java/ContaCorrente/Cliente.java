@@ -23,7 +23,7 @@ class Cliente{
         res += "\nData de nascimento: " + dataNascimento;
         res += "\nEndereço: " + endereço;
         if (tipo == 1) 
-            res += "\n*** PREFERENCIAL";
+            res += "\n*** ESPECIAL";
         else
             res += "\n*** COMUM";
         return res;
